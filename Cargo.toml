@@ -1,0 +1,24 @@
+[package]
+name = "remaining"
+version = "0.1.0"
+edition = "2024"
+description = "Check remaining usage quotas for Z.ai, Codex, OpenCode, and Ollama Cloud"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+chrono = { version = "0.4", features = ["serde"] }
+clap = { version = "4", features = ["derive"] }
+dirs = "5"
+rusqlite = { version = "0.31", features = ["bundled"] }
+console = "0.15"
+regex-lite = "0.1"
+ctrlc = "3"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
