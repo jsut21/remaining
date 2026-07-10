@@ -53,9 +53,13 @@ Ubuntu 24.04와 GNOME Shell 46에서 사용할 수 있습니다. CLI를 먼저 �
 
 확장 설정까지 지우려면 `--purge-settings`를 추가합니다. 이 명령은 CLI를 삭제하지 않습니다.
 
-![GNOME 시연 화면](docs/media/remaining-gnome-demo.gif)
+<p align="center">
+  <img src="docs/media/remaining-gnome-demo.gif" alt="Remaining GNOME 시연 화면" width="440">
+</p>
 
-[원본 MP4 시연 영상 보기](docs/media/remaining-gnome-demo.mp4)
+<p align="center">
+  <a href="docs/media/remaining-gnome-demo.mp4">원본 MP4 시연 영상 보기</a>
+</p>
 
 ## 터미널에서 사용하기
 

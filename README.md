@@ -60,9 +60,13 @@ The CLI is not removed. Add `--purge-settings` to remove saved GNOME settings as
 
 The included GNOME Shell extension is the desktop integration for Ubuntu 24.04 and GNOME Shell 46.
 
-![GNOME demo](docs/media/remaining-gnome-demo.gif)
+<p align="center">
+  <img src="docs/media/remaining-gnome-demo.gif" alt="Remaining GNOME demo" width="440">
+</p>
 
-[Open the original MP4 demo](docs/media/remaining-gnome-demo.mp4).
+<p align="center">
+  <a href="docs/media/remaining-gnome-demo.mp4">Open the original MP4 demo</a>
+</p>
 
 ## CLI
 
