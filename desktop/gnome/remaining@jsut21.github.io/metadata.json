@@ -1,0 +1,11 @@
+{
+  "uuid": "remaining@jsut21.github.io",
+  "name": "Remaining",
+  "description": "AI quota usage in the GNOME top bar",
+  "url": "https://github.com/jsut21/remaining",
+  "shell-version": [
+    "46"
+  ],
+  "settings-schema": "io.github.jsut21.remaining",
+  "version": 12
+}

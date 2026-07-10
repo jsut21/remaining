@@ -1,0 +1,631 @@
+.remaining-panel-button {
+  spacing: 6px;
+  padding: 0 6px;
+}
+
+.remaining-panel-meter {
+  width: 18px;
+  height: 18px;
+}
+
+.remaining-panel-label {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.remaining-menu-root {
+  spacing: 14px;
+  padding: 10px 12px 14px;
+  width: 600px;
+  font-family: "Ubuntu Sans";
+}
+
+.remaining-menu-scroll {
+  max-height: 760px;
+}
+
+.remaining-menu-content {
+  spacing: 16px;
+  padding-right: 2px;
+}
+
+.remaining-header-row {
+  spacing: 12px;
+  padding: 3px 4px 1px;
+}
+
+.remaining-header-text {
+  spacing: 3px;
+}
+
+.remaining-header-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f7f7f7;
+}
+
+.remaining-header-subtitle {
+  font-size: 11px;
+  color: #a8a8a8;
+}
+
+.remaining-header-subtitle-error {
+  color: #d36b63;
+}
+
+.remaining-icon-button {
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  padding: 0;
+  background-color: #313131;
+  border: 1px solid transparent;
+  color: #f7f7f7;
+}
+
+.remaining-icon-button:hover {
+  background-color: #393939;
+  border-color: transparent;
+}
+
+.remaining-icon-button:focus {
+  background-color: #37302e;
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px #ef8661;
+}
+
+.remaining-icon-button-loading {
+  background-color: rgba(233, 84, 32, 0.16);
+  border-color: #a94b2a;
+  color: #e98a68;
+}
+
+.remaining-icon {
+  icon-size: 17px;
+  color: inherit;
+}
+
+.remaining-message-card {
+  spacing: 7px;
+  padding: 14px;
+  border-radius: 9px;
+  background-color: #2f2f2f;
+  border: 1px solid transparent;
+}
+
+.remaining-message-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f7f7f7;
+}
+
+.remaining-fill-good {
+  background-color: #5f946f;
+}
+
+.remaining-fill-warning {
+  background-color: #b57b3d;
+}
+
+.remaining-fill-critical {
+  background-color: #ba5c5c;
+}
+
+.remaining-fill-unknown {
+  background-color: #858585;
+}
+
+.remaining-text-good {
+  color: #7eaf8d;
+}
+
+.remaining-text-warning {
+  color: #c08a4d;
+}
+
+.remaining-text-critical {
+  color: #cb6b6b;
+}
+
+.remaining-text-unknown {
+  color: #9b9b9b;
+}
+
+.remaining-provider-selector {
+  spacing: 12px;
+}
+
+.remaining-selector-heading {
+  spacing: 10px;
+  padding: 0 2px;
+}
+
+.remaining-selector-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #b8b8b8;
+}
+
+.remaining-panel-provider-state {
+  spacing: 6px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background-color: #d34615;
+  color: #ffffff;
+}
+
+.remaining-panel-provider-icon {
+  icon-size: 11px;
+  color: inherit;
+}
+
+.remaining-panel-provider-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.remaining-provider-summary-grid {
+  spacing: 12px;
+}
+
+.remaining-provider-summary-row {
+  spacing: 12px;
+}
+
+.remaining-provider-summary-card {
+  width: 150px;
+  min-width: 150px;
+  spacing: 8px;
+  padding: 11px;
+  border-radius: 9px;
+  background-color: #2f2f2f;
+  border: 1px solid transparent;
+}
+
+.remaining-provider-summary-card-selected {
+  background-color: #393230;
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px #d34615;
+}
+
+.remaining-provider-summary-header {
+  spacing: 6px;
+}
+
+.remaining-provider-summary-identity {
+  spacing: 7px;
+}
+
+.remaining-provider-select-button,
+.remaining-provider-metrics-button {
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: inherit;
+}
+
+.remaining-provider-select-button:hover,
+.remaining-provider-metrics-button:hover {
+  background-color: rgba(247, 247, 247, 0.07);
+}
+
+.remaining-provider-select-button:focus,
+.remaining-provider-metrics-button:focus {
+  background-color: #37302e;
+  box-shadow: inset 0 0 0 2px #ef8661;
+}
+
+.remaining-provider-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.remaining-provider-summary-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
+.remaining-pin-button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #8f8f8f;
+}
+
+.remaining-pin-button:hover,
+.remaining-pin-button:focus {
+  background-color: rgba(247, 247, 247, 0.10);
+  color: #b8b8b8;
+}
+
+.remaining-pin-button-active {
+  background-color: #d34615;
+  color: #ffffff;
+}
+
+.remaining-pin-button-active:hover,
+.remaining-pin-button-active:focus {
+  background-color: #e64c17;
+  color: #ffffff;
+}
+
+.remaining-pin-icon {
+  icon-size: 12px;
+  color: inherit;
+}
+
+.remaining-provider-summary-metrics {
+  spacing: 7px;
+  padding-top: 1px;
+}
+
+.remaining-provider-summary-metric {
+  spacing: 3px;
+}
+
+.remaining-provider-summary-values {
+  spacing: 8px;
+}
+
+.remaining-provider-summary-metric-label {
+  font-size: 10px;
+  font-weight: 500;
+  color: #a8a8a8;
+}
+
+.remaining-provider-summary-metric-value {
+  font-family: "Ubuntu Sans Mono";
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.remaining-provider-summary-empty {
+  font-size: 10px;
+  color: #8f8f8f;
+  padding: 5px 0;
+}
+
+.remaining-divider {
+  height: 1px;
+  background-color: rgba(247, 247, 247, 0.15);
+}
+
+.remaining-provider-detail {
+  spacing: 12px;
+}
+
+.remaining-provider-detail-header {
+  spacing: 12px;
+}
+
+.remaining-provider-detail-identity {
+  spacing: 10px;
+}
+
+.remaining-provider-detail-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #313131;
+}
+
+.remaining-provider-detail-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin: 13px;
+}
+
+.remaining-provider-detail-copy {
+  spacing: 3px;
+}
+
+.remaining-provider-detail-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #f7f7f7;
+}
+
+.remaining-provider-detail-meta {
+  spacing: 7px;
+  padding-top: 4px;
+}
+
+.remaining-provider-plan,
+.remaining-status-pill {
+  font-size: 10px;
+  font-weight: 600;
+  color: #b8b8b8;
+  border-radius: 999px;
+  padding: 3px 8px;
+  background-color: #313131;
+  border: 1px solid transparent;
+}
+
+.remaining-status-pill {
+  border-color: transparent;
+}
+
+.remaining-source-label {
+  font-size: 10px;
+  color: #8f8f8f;
+}
+
+.remaining-window-grid {
+  spacing: 12px;
+}
+
+.remaining-window-grid-compact {
+  padding: 0;
+}
+
+.remaining-window-row {
+  spacing: 12px;
+}
+
+.remaining-window-tile {
+  min-width: 250px;
+  spacing: 7px;
+  padding: 13px;
+  border-radius: 9px;
+  background-color: #2f2f2f;
+  border: 1px solid transparent;
+}
+
+.remaining-window-tile-compact {
+  min-width: 242px;
+  spacing: 6px;
+  padding: 10px;
+  background-color: #313131;
+  border-color: transparent;
+}
+
+.remaining-window-top {
+  spacing: 8px;
+}
+
+.remaining-window-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
+.remaining-window-percent {
+  font-family: "Ubuntu Sans Mono";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.remaining-window-tile-compact .remaining-window-percent {
+  font-size: 12px;
+}
+
+.remaining-progress-track {
+  height: 7px;
+  border-radius: 4px;
+  background-color: #515151;
+}
+
+.remaining-progress-track-compact {
+  height: 4px;
+  border-radius: 2px;
+}
+
+.remaining-progress-fill {
+  border-radius: 4px;
+}
+
+.remaining-progress-fill-compact {
+  border-radius: 2px;
+}
+
+
+.remaining-window-detail {
+  font-size: 10px;
+  color: #b8b8b8;
+  padding-top: 2px;
+}
+
+.remaining-window-reset {
+  font-size: 10px;
+  color: #8f8f8f;
+}
+
+.remaining-more-sections {
+  spacing: 10px;
+}
+
+.remaining-more-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #8f8f8f;
+  padding: 0 2px;
+}
+
+.remaining-collapsible-panel {
+  border-radius: 9px;
+  background-color: #2f2f2f;
+  border: 1px solid transparent;
+}
+
+.remaining-collapsible-panel-expanded {
+  background-color: #303030;
+}
+
+.remaining-collapsible-button {
+  padding: 0;
+  border: none;
+  border-radius: 9px;
+  background-color: transparent;
+  color: inherit;
+}
+
+.remaining-collapsible-button:hover {
+  background-color: #393939;
+}
+
+.remaining-collapsible-button:focus {
+  background-color: #37302e;
+  box-shadow: inset 0 0 0 2px #ef8661;
+}
+
+.remaining-collapsible-header {
+  spacing: 10px;
+  padding: 10px 12px;
+}
+
+.remaining-section-icon-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #3b3b3b;
+  color: #c8c8c8;
+}
+
+.remaining-section-icon {
+  icon-size: 15px;
+  color: inherit;
+  margin: 7px;
+}
+
+.remaining-collapsible-copy {
+  spacing: 3px;
+}
+
+.remaining-collapsible-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
+.remaining-collapsible-summary {
+  font-size: 10px;
+  color: #8f8f8f;
+}
+
+.remaining-chevron-icon {
+  icon-size: 16px;
+  color: #a8a8a8;
+}
+
+.remaining-collapsible-body {
+  padding: 0 12px 12px;
+}
+
+.remaining-detail-list {
+  spacing: 8px;
+}
+
+.remaining-detail-row {
+  spacing: 10px;
+  padding: 8px 10px;
+  border-radius: 9px;
+  background-color: #313131;
+}
+
+.remaining-detail-text {
+  spacing: 3px;
+}
+
+.remaining-detail-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
+.remaining-detail-meta {
+  font-size: 9px;
+  color: #8f8f8f;
+}
+
+.remaining-detail-value {
+  font-family: "Ubuntu Sans Mono";
+  font-size: 11px;
+  font-weight: 600;
+  color: #d8d8d8;
+}
+
+.remaining-empty {
+  font-size: 11px;
+  color: #8f8f8f;
+  padding-top: 8px;
+}
+
+.remaining-error {
+  color: #d36b63;
+  font-size: 11px;
+  padding-top: 4px;
+}
+
+.remaining-header-actions {
+  spacing: 8px;
+}
+
+.remaining-settings-scroll {
+  max-height: 700px;
+}
+
+.remaining-settings-content {
+  spacing: 12px;
+  padding: 2px 2px 4px;
+}
+
+.remaining-settings-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #b8b8b8;
+  padding: 0 2px;
+}
+
+.remaining-settings-list {
+  spacing: 8px;
+}
+
+.remaining-settings-divider {
+  margin: 4px 0;
+}
+
+.remaining-settings-row {
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: #2f2f2f;
+  color: inherit;
+}
+
+.remaining-settings-row:hover {
+  background-color: #393939;
+}
+
+.remaining-settings-row:focus {
+  background-color: #37302e;
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px #ef8661;
+}
+
+.remaining-settings-row-content {
+  spacing: 16px;
+  padding: 11px 13px;
+}
+
+.remaining-settings-row-copy {
+  spacing: 3px;
+}
+
+.remaining-settings-row-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
+.remaining-settings-row-subtitle {
+  font-size: 10px;
+  color: #8f8f8f;
+}

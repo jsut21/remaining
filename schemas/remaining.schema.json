@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:remaining:schema:v2",
+  "title": "remaining provider results",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["schema_version", "provider", "name", "status", "source", "windows", "credits", "metrics", "fetched_at"],
+    "properties": {
+      "schema_version": { "type": "integer", "const": 2 },
+      "provider": { "type": "string" },
+      "name": { "type": "string" },
+      "status": {
+        "type": "string",
+        "enum": ["available", "auth_required", "network_error", "unavailable"]
+      },
+      "plan": { "type": ["string", "null"] },
+      "source": {
+        "type": "string",
+        "enum": ["oauth_api", "api_key", "browser_cookie", "web_scrape", "local_file", "local_database", "cli", "unknown"]
+      },
+      "source_label": { "type": ["string", "null"] },
+      "error": { "type": ["string", "null"] },
+      "fetched_at": { "type": "string", "format": "date-time" },
+      "windows": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["type", "label", "used_percent", "usage_known", "is_synthetic", "remaining", "limit", "remaining_percent", "unit"],
+          "properties": {
+            "type": { "type": "string", "enum": ["5h", "weekly", "monthly", "other"] },
+            "label": { "type": "string" },
+            "used_percent": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+            "usage_known": { "type": "boolean" },
+            "is_synthetic": { "type": "boolean" },
+            "remaining": { "type": "integer" },
+            "limit": { "type": "integer" },
+            "remaining_percent": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+            "used_units": { "type": ["integer", "null"] },
+            "remaining_units": { "type": ["integer", "null"] },
+            "limit_units": { "type": ["integer", "null"] },
+            "unit": { "type": "string", "enum": ["percent", "tokens", "credits", "requests", "minutes", "usd", "units"] },
+            "resets_at": { "type": "string" },
+            "resets_at_epoch": { "type": "integer" }
+          }
+        }
+      },
+      "credits": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["label", "remaining", "total", "unit"],
+          "properties": {
+            "label": { "type": "string" },
+            "remaining": { "type": ["integer", "null"] },
+            "total": { "type": ["integer", "null"] },
+            "unit": { "type": "string", "enum": ["percent", "tokens", "credits", "requests", "minutes", "usd", "units"] },
+            "source": { "type": ["string", "null"] },
+            "expires_at_epoch": { "type": "integer" }
+          }
+        }
+      },
+      "metrics": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["label", "value", "unit"],
+          "properties": {
+            "label": { "type": "string" },
+            "value": { "type": "number" },
+            "unit": { "type": "string", "enum": ["percent", "tokens", "credits", "requests", "minutes", "usd", "units"] },
+            "period": { "type": ["string", "null"] },
+            "source": { "type": ["string", "null"] }
+          }
+        }
+      }
+    }
+  }
+}

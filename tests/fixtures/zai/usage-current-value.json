@@ -1,0 +1,8 @@
+{
+  "type": "TOKENS_LIMIT",
+  "unit": 3,
+  "number": 5,
+  "usage": 1000,
+  "currentValue": 100,
+  "percentage": 99
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="io.github.jsut21.remaining"
+          path="/io/github/jsut21/remaining/">
+    <key name="panel-provider" type="s">
+      <default>'codex'</default>
+      <summary>Provider shown in the top panel</summary>
+      <description>Provider identifier used for the compact top-panel summary.</description>
+    </key>
+    <key name="enabled-providers" type="as">
+      <default>['codex', 'zai', 'ollama']</default>
+      <summary>Providers checked by the extension</summary>
+      <description>Provider identifiers passed to the remaining CLI.</description>
+    </key>
+    <key name="allow-browser-cookies" type="b">
+      <default>true</default>
+      <summary>Allow local browser cookie access</summary>
+      <description>Allow the CLI to read supported cookies from local browser profiles.</description>
+    </key>
+    <key name="allow-custom-endpoints" type="b">
+      <default>false</default>
+      <summary>Allow custom provider endpoints</summary>
+      <description>Allow credentials to be sent to non-official HTTPS endpoints.</description>
+    </key>
+  </schema>
+</schemalist>

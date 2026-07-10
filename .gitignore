@@ -1,1 +1,4 @@
 /target
+/designs/*
+!/designs/remaining-gnome-v2-overview.png
+**/schemas/gschemas.compiled

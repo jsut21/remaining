@@ -7,11 +7,7 @@ pub fn home_dir() -> Option<PathBuf> {
 pub fn find_home_file(rel_path: &str) -> Option<PathBuf> {
     let home = home_dir()?;
     let path = home.join(rel_path);
-    if path.exists() {
-        Some(path)
-    } else {
-        None
-    }
+    if path.exists() { Some(path) } else { None }
 }
 
 pub fn read_home_file(rel_path: &str) -> Option<String> {
@@ -19,8 +15,23 @@ pub fn read_home_file(rel_path: &str) -> Option<String> {
     std::fs::read_to_string(&path).ok()
 }
 
-pub fn progress_bar(percent: i32, width: usize) -> String {
-    let filled = (width as f64 * (percent as f64 / 100.0)) as usize;
+pub fn network_error_message(error: &reqwest::Error) -> String {
+    if error.is_timeout() {
+        "Provider request timed out".to_string()
+    } else if error.is_connect() {
+        "Could not connect to provider".to_string()
+    } else if error.is_decode() {
+        "Provider response could not be decoded".to_string()
+    } else if error.is_body() {
+        "Provider response body could not be read".to_string()
+    } else {
+        "Provider request failed".to_string()
+    }
+}
+
+pub fn progress_bar(percent: f64, width: usize) -> String {
+    let percent = percent.clamp(0.0, 100.0);
+    let filled = (width as f64 * (percent / 100.0)).round() as usize;
     let empty = width - filled;
     format!("{}{}", "█".repeat(filled), "░".repeat(empty))
 }

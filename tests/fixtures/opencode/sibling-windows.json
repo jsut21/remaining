@@ -1,0 +1,22 @@
+{
+  "payload": [
+    {
+      "rollingUsage": {
+        "usagePercent": 12.5,
+        "resetInSec": 600
+      }
+    },
+    {
+      "weeklyUsage": {
+        "usagePercent": 44.25,
+        "resetInSec": 9000
+      }
+    },
+    {
+      "monthlyUsage": {
+        "usagePercent": 73,
+        "resetInSec": 50000
+      }
+    }
+  ]
+}
