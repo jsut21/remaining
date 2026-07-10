@@ -21,7 +21,7 @@ tokio = { version = "1", features = ["rt-multi-thread", "macros", "signal", "tim
 chrono = { version = "0.4", features = ["serde"] }
 clap = { version = "4", features = ["derive"] }
 dirs = "5"
-rusqlite = { version = "0.31", features = ["bundled"] }
+rusqlite = { version = "0.40", features = ["bundled"] }
 console = "0.15"
 regex-lite = "0.1"
 aes = "0.8"
