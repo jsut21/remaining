@@ -58,7 +58,7 @@ Ubuntu 24.04와 GNOME Shell 46에서 사용할 수 있습니다. CLI를 먼저 �
 </p>
 
 <p align="center">
-  <a href="docs/media/remaining-gnome-demo.mp4">원본 MP4 시연 영상 보기</a>
+  <a href="docs/media/remaining-gnome-demo.mp4">원본 MP4 시연 영상 다운로드</a>
 </p>
 
 ## 터미널에서 사용하기

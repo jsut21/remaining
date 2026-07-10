@@ -65,7 +65,7 @@ The included GNOME Shell extension is the desktop integration for Ubuntu 24.04 a
 </p>
 
 <p align="center">
-  <a href="docs/media/remaining-gnome-demo.mp4">Open the original MP4 demo</a>
+  <a href="docs/media/remaining-gnome-demo.mp4">Download the original MP4 demo</a>
 </p>
 
 ## CLI
